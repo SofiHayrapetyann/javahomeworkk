@@ -1,4 +1,4 @@
-public class homework2 {
+public class Main {
     public static void main(String[] args) {
         int x=13;
         int y=3;
@@ -17,8 +17,5 @@ public class homework2 {
 
         double n=25.645;
         System.out.println(n%1);
-
-
-
     }
 }
