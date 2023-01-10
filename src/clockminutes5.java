@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class clockminutes5 {
     public static void main(String[] args) {
         Scanner minute = new Scanner(System.in);
-        System.out.println("Enter a number from 1 to 11");
+        System.out.println("Enter a number from 1 to 12");
         int s = minute.nextInt();
         int i = 12;
         if ( s>=0 && s<=i) {
