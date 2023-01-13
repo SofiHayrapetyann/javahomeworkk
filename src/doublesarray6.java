@@ -1,26 +1,20 @@
+import java.util.Arrays;
+
 public class doublesarray6 {
     public static void main(String[] args) {
+        int[] firstArray = {6,-9,11,-12,21,-6};
+        int[] secondArray = new int[firstArray.length];
 
-            double[] arr1 = {13, -8.66, 3, 4.5, -5};
-            double[] arr2 = new double[5];
-            int i,
-        if (arr1[0] > 0) {
-            arr2[i] = arr1[4];
+        for (int i = 0, x = 0; i < firstArray.length; ++i) {
+            if (firstArray[i] >= 0) {
+                secondArray[x++] = firstArray[i];
+            }
         }
-        if (arr1[1] > 0) {
-            arr2[i] = arr1[1];
-        }
-        if (arr1[2] > 0) {
-            arr2[i] = arr1[2];
-        }
-        if (arr1[3] > 0) {
-            arr2[i] = arr1[3];
-        }
-        if (arr1[4] > 0) {
-            arr2[i] = arr1[4];
-        }
+        System.out.println(Arrays.toString (secondArray));
     }
+
 }
+
 
 
 
