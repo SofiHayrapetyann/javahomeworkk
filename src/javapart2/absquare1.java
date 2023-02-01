@@ -3,7 +3,7 @@ package javapart2;
 public class absquare1 {
     public static void main(String[] args) {
 
-        float sum = abSquare(5, -2);
+        float sum = abSquare(10, 10);
         if (sum == -1) {
             System.out.println("Please correct your inputs.It sh0uld be in a range -10-10");
         } else if (sum == -2) {
@@ -14,7 +14,7 @@ public class absquare1 {
     }
 
         static float abSquare ( int a, int b){
-            int sum = 1;
+            long sum = 1;
             if (a * (-1) > 10 || b * (-1) > 10 || a > 10 || b > 10) {
                 return -1;
             }
