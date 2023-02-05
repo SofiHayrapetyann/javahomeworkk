@@ -7,7 +7,7 @@ public class Stringequal3 {
         String text = ("red yellow blue brown string yellow");
         String word= ("yellow");
         System.out.println(stringequals1(text,word));
-        System.out.println(stringequal2(text));
+        System.out.println(stringequal1(text));
 
     }
     static int stringequals1(String text, String word) {
@@ -27,7 +27,7 @@ public class Stringequal3 {
         }
     }
 
-static int stringequal2(String text){
+static int stringequal1(String text){
         int count=0;
     for (String text1 : text.split(" ")) {
         if (text1.equals("string")) {
