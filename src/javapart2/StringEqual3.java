@@ -1,8 +1,6 @@
 package javapart2;
 
-import java.util.Arrays;
-
-public class Stringequal3 {
+public class StringEqual3 {
     public static void main(String[] args) {
         String text = ("red yellow blue brown string yellow");
         String word = ("yellow");
