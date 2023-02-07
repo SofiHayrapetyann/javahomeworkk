@@ -7,7 +7,7 @@ public class Stringequal3 {
         String text = ("red yellow blue brown string yellow");
         String word = ("yellow");
         System.out.println(stringEqual1(text, word));
-        System.out.println(stringEqual1(text, "string"));
+        System.out.println(stringEqual1(text));
 
     }
 
