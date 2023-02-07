@@ -27,4 +27,6 @@ public class Stringequal3 {
             return count;
         }
     }
-}
+    static int stringEqual1(String text){
+        return stringEqual1(text, "string");
+    }}
