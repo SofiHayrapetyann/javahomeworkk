@@ -13,7 +13,7 @@ class City {
     }
 }
 
-public class ClassCity {
+public class ClassCity5 {
     public static void main(String[] args) {
         City myCity = new City(153, 20300, "Syuniq");
         if (myCity.name == null) {
@@ -23,7 +23,6 @@ public class ClassCity {
         System.out.println("The province of the city " + myCity.province);
         System.out.println("The population of the city is " + myCity.population);
         System.out.println("The name of the city is " + myCity.name);
-
 
     }
 }
