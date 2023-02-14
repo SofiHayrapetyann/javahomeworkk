@@ -26,7 +26,8 @@ public class  SportsmanScores {
           sportsman[1]=s2;
          sportsman[2]=s3;
         for (int i = 0; i < sportsman.length; i++) {
-            System.out.println(("The average score of "+ (i+1) + " sportsman is "+ sportsman[i].averageOfScores(sportsman[i])));
+            System.out.println(("The average score of "+ (i+1) + " sportsman is "+
+                    sportsman[i].averageOfScores(sportsman[i])));
         }
 
 
