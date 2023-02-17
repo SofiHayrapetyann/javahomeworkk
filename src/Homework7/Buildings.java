@@ -23,7 +23,7 @@ class Building {
 
 class District {
     private  Building[] buildings;
-    private  int park;
+    private  double park;
 
     District(Building[] buildings, int park) {
         this.buildings = buildings;
