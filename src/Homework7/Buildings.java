@@ -3,9 +3,9 @@ package Homework7;
 import org.w3c.dom.ls.LSOutput;
 
 class Building {
-    private final int buildingFloors;
-    private final int[] apartmentof2room;
-    private final int[] apartmentof3room;
+    private int buildingFloors;
+    private int[] apartmentof2room;
+    private int[] apartmentof3room;
     String typeofBuilding;
 
     Building(int builingFloors, int[] rooms2, int[] rooms3, String type) {
@@ -22,8 +22,8 @@ class Building {
 }
 
 class District {
-    private final Building[] buildings;
-    private final int park;
+    private  Building[] buildings;
+    private  int park;
 
     District(Building[] buildings, int park) {
         this.buildings = buildings;
