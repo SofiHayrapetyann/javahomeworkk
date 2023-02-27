@@ -10,7 +10,7 @@ public class StringReverse {
         char[] array1 = string1.toCharArray();
         String string2 = " ";
         for (int i = array1.length - 1; i >= 0; i--) {
-            string2 += (array1[i]);
+            string2 += array1[i];
         }
         System.out.println(string2);
 
