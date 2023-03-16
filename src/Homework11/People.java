@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 
 class People {
     private final String name;
-    int age;
+   private int age;
     private final String surname;
     private String address;
     private int phoneNumber;
@@ -56,7 +56,9 @@ class People {
             System.exit(-1);
         }
         this.age = age;
-
+    }
+    public int getAge(){
+        return age;
     }
 }
 
