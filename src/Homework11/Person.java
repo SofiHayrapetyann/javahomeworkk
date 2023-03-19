@@ -6,7 +6,7 @@ public class Person {
         Homework11.Manager manager1 = new Homework11.Manager("Physchology", "Social Psychologist", 100000, employee1);
         System.out.println(manager1.getDepartment());
         System.out.println(employee1.getSalary());
-        System.out.println(manager1.specialization);
+        System.out.println(manager1.getSpecialization());
 
     }
 }

@@ -10,7 +10,7 @@ public class Employee extends People {
         this.salary = salary;
         setSalary(salary);
     }
-    private String getSpecialization(){
+    public String getSpecialization(){
         return this.specialization;
     }
     private void setSalary(double salary){
