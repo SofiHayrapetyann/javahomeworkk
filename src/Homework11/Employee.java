@@ -1,7 +1,7 @@
 package Homework11;
 
 public class Employee extends People {
-    String specialization;
+    private String specialization;
     private double salary;
 
     Employee(String specialization, double salary, People ob) {
@@ -9,6 +9,9 @@ public class Employee extends People {
         this.specialization = specialization;
         this.salary = salary;
         setSalary(salary);
+    }
+    private String getSpecialization(){
+        return this.specialization;
     }
     private void setSalary(double salary){
         if(this.salary<63000||this.salary>4000000){
