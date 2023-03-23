@@ -7,8 +7,8 @@ public class Gold extends Standart {
 
     private double lunchCard = 100000.0;
 
-    Gold(String userName, String userSurname,String typeOfCard, String pinCode, double cardAccount, String cvv,int expirationYear) {
-        super(userName, userSurname,cardAccount,pinCode,typeOfCard, cvv,expirationYear);
+    Gold(String userName, String userSurname,String typeOfCard, String pinCode, double cardAccount, String cvv,String expirationYear) {
+        super(userName, userSurname,cardAccount,typeOfCard, cvv,pinCode,expirationYear);
     }
 
     public void payingForLunch(double bill) {
@@ -35,4 +35,9 @@ public void infoOfUser(){
     System.out.println("Type of Card "+ super.getTypeOfCard());
     System.out.println("Expiration year of the card " + super.getExpirationYear());
     }
+    @Override
+public String toString (){
+        return  "Name " +getName() + ", userSurname " + getUserSurname()+ ", Type of card "+ getTypeOfCard()+
+                ", Expiration date " + getExpirationYear() ;
+}
 }

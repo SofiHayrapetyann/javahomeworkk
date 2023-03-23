@@ -1,13 +1,10 @@
 package Homework12;
 
-import java.util.Scanner;
-import java.util.concurrent.SynchronousQueue;
-
 public class Business extends Standart {
     private int millionForCard;
 
-    Business(String userName, String userSurname,String typeOfCard, String pinCode, double cardAccount, String cvv,int expiationYear) {
-        super(userName, userSurname, cardAccount,typeOfCard, pinCode, cvv,expiationYear);
+    Business(String userName, String userSurname,double cardAccount,String typeOfCard,String cvv, String pinCode,  String expiationYear) {
+        super(userName, userSurname, cardAccount,typeOfCard,cvv,pinCode,expiationYear);
     }
 
     protected void loan1Million() {
@@ -28,13 +25,12 @@ public class Business extends Standart {
         System.out.println("You get cashback 10% ");
 
     }
-
-    public void infoOfUser(){
-        System.out.println("Name " + getName());
-        System.out.println("Surname "+getUserSurname());
-        System.out.println("Type of Card "+ getTypeOfCard());
-        System.out.println("Expiration year of the card " + getExpirationYear());
+    @Override
+    public String toString (){
+        return  "Name " +getName() + ", userSurname " + getUserSurname()+ ", Type of card "+ getTypeOfCard()+
+                ", Expiration date " + getExpirationYear() ;
     }
+
 }
 
 

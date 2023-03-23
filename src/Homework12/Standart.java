@@ -8,9 +8,9 @@ public class Standart {
     protected double cardAccount;
     private String pinCode;
     private String cvv;
-    private  int expirationYear;
+    private  String expirationYear;
     private String typeOfCard;
-    public Standart(String userName, String userSurname, double card, String pinCode, String cvv, String typeOfCard,int expirationYear) {
+    public Standart(String userName, String userSurname, double card,String typeOfCard, String cvv, String pinCode,String expirationYear) {
         this.cardAccount = card;
         this.userName = userName;
         this.userSurname = userSurname;
@@ -25,7 +25,7 @@ public class Standart {
     protected  String getUserSurname(){
         return this.userSurname;
     }
-  protected  int getExpirationYear() {
+  protected  String getExpirationYear() {
       return this.expirationYear;
   }
   protected String getTypeOfCard(){
