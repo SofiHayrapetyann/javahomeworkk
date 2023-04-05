@@ -10,13 +10,11 @@ public class Shop {
     public Shop(String item, String model, double sellingPrice) {
         this.item = item;
         this.model = model;
-        setCostPrice(sellingPrice);
     }
 
 
     public void payingWithCard(Electronics ob, Business obj) {
         if (obj.cardAccount > 0 && obj.cardAccount > ob.getSellingPrice()) {
-            if (ob.getSellingPrice() == this.sellingPrice) {
                 if (ob.getSellingPrice() > 0) {
                     obj.cardAccount-=ob.getSellingPrice();
                     income += ob.getSellingPrice() - (setCostPrice(ob.getSellingPrice()));
@@ -26,17 +24,16 @@ public class Shop {
 
                 }
             } else {
-                System.out.println("Your payment is cancelled.Please input invalid price");
+                System.out.println("Your payment is cancelled.");
             }
 
-        }
     }
 
     protected double setCostPrice(double price) {
         if (price > 0 && price <= 500000.0) {
-            costPrice = 40 / 100 * price;
+            costPrice =   price*40/100;
         } else if (price > 500000.0) {
-            costPrice = 45 / 100 * price;
+            costPrice = price*45/100;
         }
         return costPrice;
     }

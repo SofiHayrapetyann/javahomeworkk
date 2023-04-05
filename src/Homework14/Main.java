@@ -8,6 +8,7 @@ public class Main{
         Shop item1=new Shop("IPhone","Iphone 12 pro max",550000.0);
         Electronics electronics1=new Phones("Samsung","a16",155000.0,200,16,2021);
         item1.payingWithCard(electronics1,user1);
+        System.out.println(Shop.getIncome());
 
     }
 }
