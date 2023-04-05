@@ -5,8 +5,8 @@ public class Phones extends Electronics {
     private int RAM;
     private boolean itisRAM = false;
 
-    public Phones(String nameOfElectronics, String nameOfModel, double sellingPrice, double delivery, int RAM) {
-        super(nameOfElectronics, nameOfModel, sellingPrice, delivery);
+    public Phones(String nameOfElectronics, String nameOfModel, double sellingPrice, double delivery, int RAM,int productionYear) {
+        super(nameOfElectronics, nameOfModel, sellingPrice, delivery,productionYear);
         this.RAM = RAM;
         setSellingPrice(sellingPrice);
     }
@@ -31,27 +31,14 @@ public class Phones extends Electronics {
     }
 
     @Override
-    public void payingWithCard(double price) {
-        if (amountOfPhones > 0) {
-            if (price < 69000.0 || price > 1500000.0) {
-                System.out.println("There is no HeadPhones available in such cost");
-                System.exit(4);
-            } else {
-                super.payingWithCard(price);
-                amountOfPhones--;
-            }
-        } else {
-            System.out.println("Invalid input.Please try again");
-        }
-    }
-    @Override
     protected void setSellingPrice(double sellingPrice) {
         if (sellingPrice > 80000.0 || sellingPrice < 1500000.0) {
-            this.setSellingPrice(sellingPrice);
+            super.setSellingPrice(sellingPrice);
         } else {
-            System.out.println("Invalid sum for LapTop");
+            System.out.println("Invalid sum for Phone");
             System.exit(3);
         }
+
     }
 
     public int getAmountOfPhones() {
