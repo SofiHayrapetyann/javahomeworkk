@@ -1,16 +1,10 @@
 package Homework14;
 
 public class Shop {
-    private final String item;
-    private final String model;
     private static double income;
-    private double sellingPrice;
     private double costPrice;
 
-    public Shop(String item, String model, double sellingPrice) {
-        this.item = item;
-        this.model = model;
-    }
+
 
 
     public void payingWithCard(Electronics ob, Business obj) {
