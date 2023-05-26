@@ -2,6 +2,7 @@ package Homework18;
 
 import ArrayList16.myArrayList;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class First {
@@ -27,13 +28,10 @@ public class First {
         list1=list2;
         System.out.println(list1.equals(list2));
         myArrayList list3=new myArrayList();
-        list1.add(66);
-        list1.add(13);
+        list3.add(66);
+        list3.add(13);
         list3.add("main");
         System.out.println(arrayList.equals(list3));//false
-
-
-
 
     }
 }
