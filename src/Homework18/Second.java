@@ -10,8 +10,13 @@ public class Second {
         arrayList1.add(13);
         arrayList1.add(66);
         arrayList1.add(3);
+        arrayList1.add(3);
         System.out.println("With duplicates " +arrayList1);
-        arrayList1.removeIf(number->(number==arrayList1.get(0)));
+        for (int i=arrayList1.size()-1;i>0;i--){
+            if(arrayList1.get(0).equals(arrayList1.get(i))){
+                arrayList1.remove(i);
+            }
+        }
         System.out.println("All duplicates was deleted " + arrayList1);
 
     }

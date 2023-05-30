@@ -19,11 +19,7 @@ public class Third {
             list2.add("green");
             list2.add("yellow");
             System.out.println(UpToNegativeArray(list2));
-            List list3 = new Vector();
-            list3.add(77);
-            list3.add("book");
-            list3.add(-3);
-            System.out.println(UpToNegativeArray(list3));
+
         }
 
         public static List<?> UpToNegativeArray(List<?> list) {
