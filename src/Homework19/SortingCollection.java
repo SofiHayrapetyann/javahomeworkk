@@ -13,7 +13,6 @@ public class SortingCollection {
         while (!theQueue.isEmpty()) {
             System.out.println(theQueue.poll());
         }
-        theQueue.clear();
         if(theQueue.isEmpty()){
             System.out.println("This collection is empty");
         }
@@ -25,7 +24,7 @@ public class SortingCollection {
         while (!theQueue1.isEmpty()) {
             System.out.println(theQueue1.poll());
         }
-        theQueue1.clear();
+
     }
 }
 
