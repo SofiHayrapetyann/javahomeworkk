@@ -14,6 +14,9 @@ public class SortingCollection {
             System.out.println(theQueue.poll());
         }
         theQueue.clear();
+        if(theQueue.isEmpty()){
+            System.out.println("This collection is empty");
+        }
         PriorityQueue<String> theQueue1 = new PriorityQueue<>();
         theQueue1.add("green");
         theQueue1.add("yellow");
